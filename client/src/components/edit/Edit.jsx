@@ -15,9 +15,18 @@ export default function Edit() {
             setGame(result)
         })
     }, [gameId]);
+
+    const formAction = async (formData) => {
+        const gameData = Object.fromEntries(formData);
+
+        await gameService.edit(gameId,gameData);
+
+        navigate(`/games/${gameId}/details`)
+
+    }
   return (
     <section id="edit-page" className="auth">
-    <form id="edit">
+    <form id="edit" action={formAction}>
         <div className="container">
 
             <h1>Edit Game</h1>
