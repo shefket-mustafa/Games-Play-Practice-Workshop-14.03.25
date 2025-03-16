@@ -1,0 +1,18 @@
+{
+"bbe14505-5ba2-4185-a780-eaec3e6af983": {
+    "title": "Anthem",
+    "category": "Max Fight",
+    "maxLevel": "42",
+    "imageUrl": "https://www.cnet.com/a/img/resize/7f4c088ca4c210723ab23e4f2553b9ed559793ee/hub/2024/11/14/3de0df72-7f1d-4d9c-aec7-7a768739ce3b/xboxbltoppic-ezgif-com-webp-to-jpg-converter.jpg?auto=webp&fit=crop&height=675&width=1200",
+    "summary": "A game",
+    "_id": "bbe14505-5ba2-4185-a780-eaec3e6af983"
+},
+"a8567f5c-c1f6-4afe-8e6f-465463ca18f1": {
+    "title": "Elden ring",
+    "category": "Dying",
+    "maxLevel": "46",
+    "imageUrl": "https://i0.wp.com/bloody-disgusting.com/wp-content/uploads/2019/03/sekiro-shadows-die-twice-review-03.jpg?resize=1000%2C600&ssl=1",
+    "summary": "You die a lot.",
+    "_id": "a8567f5c-c1f6-4afe-8e6f-465463ca18f1"
+}
+}
