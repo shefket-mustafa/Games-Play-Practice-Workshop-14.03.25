@@ -19,7 +19,7 @@ export default function Games() {
     {/* <!-- Display div: with information about every game (if any) --> */}
    
         
-        {games.length > 0 ? games.map(game => <GameCatalogItem key={game.id} {...game}/>)
+        {games.length > 0 ? games.map(game => <GameCatalogItem key={game._id} {...game}/>)
         : games.length === 0 && <h3 className="no-articles">No articles yet</h3>}
    
    
