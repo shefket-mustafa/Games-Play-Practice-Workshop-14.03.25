@@ -11,6 +11,7 @@ import Edit from './components/edit/Edit'
 import Details from './components/details/Details'
 import './App.css'
 import { UserContext } from './contexts/userContext'
+import Logout from './components/logout/Logout'
 
 function App() {
   const[authData, setAuthData] = useState({});
@@ -37,6 +38,7 @@ function App() {
         <Route path='/games/:gameId/edit' element={<Edit />} />
         <Route path='/edit' element={<Edit />} />
         <Route path='/details' element={<Details />} />
+        <Route path='/logout' element={<Logout />} />
 
       </Routes>
     

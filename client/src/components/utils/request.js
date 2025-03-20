@@ -8,7 +8,10 @@
     if(data){
         options={
             ...options,
-            headers:{'Content-type':'application/json'},
+
+            headers:{
+                'Content-type':'application/json'},
+                ...options.headers,
             body: JSON.stringify(data)
         }
     }
