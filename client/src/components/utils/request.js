@@ -16,10 +16,17 @@
         }
     }
     
+    
     const response = await fetch(url,options);
+    const responseType = response.headers.get('Content-Type')
+    if(!responseType){
+        return
+    };
+
     const result = await response.json();
 
     return result;
+
 };
 
 export default {

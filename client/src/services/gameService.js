@@ -8,9 +8,11 @@ export default {
     },
     async getAll(){
         const result = await request.get(baseUrl);
+        if(result){
 
-        const games = Object.values(result);
-        return games;
+            const games = Object.values(result);
+        }
+        return result;
     },
      create(gameData){
         return request.post(baseUrl, gameData)
