@@ -17,7 +17,7 @@ export default function Login() {
 
         userLoginHandler(authData);
 
-        // navigate('/games');
+        navigate('/games');
 
         return formValues
     }
