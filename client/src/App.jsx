@@ -12,11 +12,11 @@ import Details from './components/details/Details'
 import './App.css'
 
 function App() {
-  const[email, setEmail] = useState('');
+  const[authData, setAuthData] = useState({});
 
-  const userLoginHandler = (authData) => {
-    console.log(authData);
-    setEmail(authData.email)  
+  const userLoginHandler = (resultData) => {
+    
+    setAuthData(resultData)  
   }
   
 
@@ -31,7 +31,7 @@ function App() {
         <Route path='/register' element={<Register />} />
         <Route path='/games' element={<Games />} />
         <Route path='/games/create' element={<Create />} />
-        <Route path='/games/:gameId/details' element={<Details email={email}/>} />
+        <Route path='/games/:gameId/details' element={<Details email={authData.email}/>} />
         <Route path='/games/:gameId/edit' element={<Edit />} />
         <Route path='/edit' element={<Edit />} />
         <Route path='/details' element={<Details />} />

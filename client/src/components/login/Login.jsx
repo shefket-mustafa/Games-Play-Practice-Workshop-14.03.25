@@ -4,9 +4,9 @@ import { useLogin } from "../../api/authApi";
 
 export default function Login({onLogin}) {
     const navigate = useNavigate();
-    const{ login } = useLogin()
+    const{ login } = useLogin();
 
-    const loginHandler = async (previousState, formData) => {
+    const loginHandler = async (_, formData) => {
         const formValues = Object.fromEntries(formData);
 
         const authData = await login(formValues.email, formValues.password)
@@ -18,7 +18,7 @@ export default function Login({onLogin}) {
 
         return formValues
     }
-    const [values, loginAction, isPending] = useActionState(loginHandler, {email:'', password:''})
+    const [_, loginAction, isPending] = useActionState(loginHandler, {email:'', password:''})
 
     
     
