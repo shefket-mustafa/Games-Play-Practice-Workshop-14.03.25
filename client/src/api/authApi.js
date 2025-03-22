@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import { useContext } from "react";
+
 import request from "../utils/request"
-import { UserContext } from "../contexts/UserContext";
+import { useUserContext } from "../contexts/UserContext";
 
 const baseUrl = 'http://localhost:3030/users';
 
@@ -36,7 +36,7 @@ export const useRegister = () => {
 };
 
 export const useLogout = () => {
-    const { accessToken, userLogoutHandler } = useContext(UserContext);
+    const { accessToken, userLogoutHandler } = useUserContext();
 
     useEffect(() => {
         if (!accessToken) {

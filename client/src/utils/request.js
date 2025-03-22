@@ -3,6 +3,16 @@ const request = async (method, url, data, options = {}) => {
         options.method = method;
     }
 
+    // const authData = JSON.parse(localStorage.getItem('auth'));
+    // if(authData.accessToken){
+    //     options = {
+    //         ...options,
+    //         headers: {
+    //             'Content-Type': 'application/json',
+    //             ...options.headers,
+    //         },
+    // }
+
     if (data) {
         options = {
             ...options,
