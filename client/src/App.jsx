@@ -28,14 +28,14 @@ function App() {
                     <Routes>
                         <Route index element={<Home />} />
                         <Route path="/games" element={<GameCatalog />} />
-                        <Route path="/games/create" element={<AuthGuard/> }>
+                        <Route element={<AuthGuard/> }>
                             <Route index element={<GameCreate/>}/>
-                        </Route>
                         <Route path="/games/:gameId/details" element={<GameDetails />} />
                         <Route path="/games/:gameId/edit" element={<GameEdit />} />
+                        <Route path="/logout" element={<Logout />} />
+                        </Route>
                         <Route path="/login" element={<Login />} />
                         <Route path="/register" element={<Register />} />
-                        <Route path="/logout" element={<Logout />} />
                     </Routes>
                 </main>
             </div>
