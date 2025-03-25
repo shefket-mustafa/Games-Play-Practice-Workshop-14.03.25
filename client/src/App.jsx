@@ -15,6 +15,7 @@ import Logout from './components/logout/Logout'
 import './App.css'
 import AuthGuard from './guards/AuthGuard'
 import GuestGuard from './guards/GuestGuard'
+import Admin from './components/admin/Admin'
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
                         <Route path="/games/:gameId/details" element={<GameDetails />} />
                         <Route path="/games/:gameId/edit" element={<GameEdit />} />
                         <Route path="/logout" element={<Logout />} />
+                        <Route path="/admin" element={<Admin />} />
                         </Route>
                         <Route element={<GuestGuard/>}>
 
