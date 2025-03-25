@@ -38,5 +38,5 @@ export const useCreateComment = () => {
         }
         return request.post(baseUrl, commentData)
     }
-    return create
+    return {create}
 }
